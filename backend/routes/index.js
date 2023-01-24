@@ -11,14 +11,10 @@ route.get(stringAPI, (req,res) => {
 
 const user = require('./user');
 const brand = require('./brand');
-// const typegloss = require('./gloss');
-// const typesuper = require('./super');
-// const typepro = require('./pro')
+// const category = require('./category');
 
 route.use(`/api/users`, user)
 route.use(`${stringAPI}/brands`, brand)
-// route.use(`${stringAPI}/gloss`, typegloss)
-// route.use(`${stringAPI}/super`, typesuper)
-// route.use(`${stringAPI}/pro`, typepro)
+// route.use(`${stringAPI}/category`, category)
 
 module.exports = route
