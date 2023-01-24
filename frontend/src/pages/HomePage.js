@@ -1,17 +1,54 @@
 import React from 'react'
 import { Routes } from 'react-router-dom'
-import Text from '../components/Text'
 import Carosel from '../components/Carosel'
+import Gloss from '../images/Gloss.jpg'
+import Super from '../images/Super.jpg'
+import Pro from '../images/Pro.jpg'
+
 
 const HomePage = () => {
   return (
     <div className='row my-3 text-left'>
-      <Carosel></Carosel>
-      <h3>DASHBOAD</h3>
-      
-      <Text></Text>
-      <div>
-      <img src='http://tk.budyawacana.sch.id/joimg/publikasi/680999default-image.jpg'></img>
+     <div className='row my-3 text-center'>
+      <h3>Home Page</h3>
+      <div className='w-100 text-center'>
+      <p>Welcome to Dashboard Nazar Paint App.</p>
+      <div className='row'>
+        <div className='col-4'>
+          <div className='card'>
+            <img className='img-card-top' src={Gloss}></img>
+            <div className='card-body'>
+              <div className='home-icons'>
+
+                <h5>Gloss Type</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='col-4'>
+          <div className='card'>
+            <img className='img-card-top' src={Super}></img>
+            <div className='card-body'>
+              <div className='home-icons'>
+
+                <h5>Super Type</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='col-4'>
+          <div className='card'>
+            <img className='img-card-top' src={Pro}></img>
+            <div className='card-body'>
+              <div className='home-icons'>
+
+                <h5>Pro Type</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
       </div>
     </div>
   )
